@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Generator</h1>
+        <form id="quiz-form">
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="science">Science</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="literature">Literature</option>
+            </select>
+
+            <label for="difficulty">Difficulty Level:</label>
+            <select id="difficulty" name="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button type="button" onclick="generateQuiz()">Generate Quiz</button>
+        </form>
+
+        <div id="quiz-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
